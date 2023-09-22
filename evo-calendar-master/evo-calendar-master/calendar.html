@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calendar</title>
+	<link rel="stylesheet" href="calendar.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/css/evo-calendar.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.3/evo-calendar/css/evo-calendar.midnight-blue.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ 
+ 
+ <!-- <script src="calendar.js"></script>-->
+</head>
+<body>
+		<div class="navbar">
+		<div class="logo">
+			<img src="#"><a href="index.html"></a>
+		</div>
+		<div class="links">
+			<ul>
+			<li><a href="index.html">Home</a></li>
+    		<li><a href='#'> About Us <i class="fa fa-caret-down"></i></a>
+    		<div class="dropdown-content">
+    			<ul>
+    				<li><a href="vision.html">Chesterfield At A Glance</a></li>
+      				<li><a href="Founder's Note.html">Founder's Note</a></li>
+      				<li><a href="codes.html">Codes &amp; Policies</a></li>
+      				<li><a href="news.html">News</a></li>
+      				<li><a href="calendar.html" class="active">Calendar</a></li>
+      				<li><a href="#">Gallery</a></li>
+      			</ul>
+    		</div>
+    		</li>
+    		<li><a href='#'>Schools <i class="fa fa-caret-down"></i></a>
+    			
+    		<div class="dropdown-content">
+    			<ul>
+      				<li><a href="#">Nursery School</a></li>
+      				<li><a href="#">Primary School</a></li>
+      			</ul>
+      		</div>
+      		</li>
+    		<li><a href='#'>Admissions <i class="fa fa-caret-down"></i></a>
+    			
+    			<div class="dropdown-content">
+    				<ul>
+      					<li><a href="#">Application Process</a></li>
+      					<li><a href="#">Tuition</a></li>
+					</ul>
+      			</div>
+      		</li>
+    		<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="first">
+		<img src="Black team.jpg">
+		<h2 class="fadeIn">NEWS</h2>
+	</div>
+ <!-- calendar starts here-->
+
+  <div id="calendar"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>   
+  <script src="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.3/evo-calendar/js/evo-calendar.min.js"></script>
+  <!--<div class="container">
+    <div class="calendar">
+      <div class="month">
+        <i class="fa-solid fa-angle-left prev"></i>
+        <div class="date">
+          <h1>September</h1>
+          <p>Fri Sep 02 2022</p>
+        </div>
+        <i class="fa-solid fa-angle-right next"></i>
+      </div>
+      <div class="weekdays">
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+      </div>
+        <div class="days">
+        <div class="prev-date">27</div>
+        <div class="prev-date">28</div>
+        <div class="prev-date">29</div>
+        <div class="prev-date">30</div>
+        <div class="new"><div class="today">1</div></div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>
+          12
+          <div class="events">
+            <div class="dot"></div>
+            <p>School Resumes</p>
+          </div>
+        </div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+        <div>18</div>
+        <div>19</div>
+        <div>20</div>
+        <div>21</div>
+        <div>22</div>
+        <div>23</div>
+        <div>24</div>
+        <div>25</div>
+        <div>26</div>
+        <div>27</div>
+        <div>28</div>
+        <div>29</div>
+        <div>30</div>
+        <div class="next-date">1</div>
+        <div class="next-date">2</div>
+        <div class="next-date">3</div>
+        <div class="next-date">4</div>
+        <div class="next-date">5</div>
+        <div class="next-date">6</div>
+        <div class="next-date">7</div>
+        <div class="next-date">8</div>
+      </div>
+    </div>    
+  </div>
+  <section class="footers">
+  <div class="footer">
+    <div class="contact">
+      <h3>Contact</h3>
+      <ul>
+        <li>09048898818</li>
+        <li>chesterfieldphuy@gmail.com</li>
+        <li>17 King Of Kings Street, Off Aka Etinan Road, Uyo, Akwa Ibom State</li>
+      </ul>
+    </div>
+    <div class="admit">
+      <h3>Admissions</h3>
+      Enquiries can be made from Monday to Friday between the hours of 8am to 5pm. Excluding public holidays
+    </div>
+    <div class="about">
+      <h3>About Us</h3>
+      <ul>
+        <li><a href="#">Facilities</a></li>
+        <li><a href="#">Vision &amp; Mission</a></li>
+        <li><a href="#">Core Values</a></li>
+        <li><a href="#">Leadership</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+      </div>
+  </div>
+    <hr class="solid">
+    <p> © 2022| CHESTERFIELD SCHOOLS LIMITED. ALL RIGHTS RESERVED.</p>
+  </section>
+  <script type="text/javascript">
+    const date= new Date();
+
+    const renderCalendar =()=>{
+      date.setDate(1);
+    console.log(date.getDay());
+
+    const monthDays = document.querySelector('.days');
+    const months=["January", "Feburary", "March", "April", "May", "June", "July","August", "September", "October", "November", "December"];
+
+    const lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
+
+    const firstDayIndex = date.getDay();
+
+    const prevLastDay = new Date(date.getFullYear(), date.getMonth(), 0).getDate();
+
+    const lastDayIndex = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDay();
+    console.log(lastDayIndex);
+
+    const nextDays = 7 - lastDayIndex - 1;
+    
+    document.querySelector('.date h1').innerHTML = months[date.getMonth()];
+    document.querySelector('.date p').innerHTML = new Date().toDateString();
+
+    let days = "";
+
+    for(let x = firstDayIndex; x>0; x--){
+      days +=`<div class="prev-date">${prevLastDay - x +1}</div>`;
+    }
+
+    for(let i = 1; i<=lastDay; i++){
+      if(i===new Date().getDate()&&date.getMonth()===new Date().getMonth()){
+        days += `<div class='new'><div class='today'>${i}</div></div>`; 
+      }else{
+      days += `<div>${i}</div>`; 
+      }
+    }
+
+    for (let j=1; j<= nextDays; j++){
+      days += `<div class='next-date'>${j}</div>`;
+
+    }
+          monthDays.innerHTML = days;
+    }
+
+
+    document.querySelector('.prev').addEventListener("click",()=>{
+      date.setMonth(date.getMonth()-1);
+      renderCalendar();
+    });
+    document.querySelector('.next').addEventListener("click",()=>{
+      date.setMonth(date.getMonth()+1);
+      renderCalendar();
+    });
+
+ 
+    renderCalendar();
+  </script>-->
+  <script> 
+    $("#calendar").evoCalendar({
+      theme: 'Midnight Blue',
+      todayHighlight: true,
+      sidebarDisplayDefault: true,
+      calendarEvents: [
+      {
+        id: 'resume', // Event's ID (required)
+        name: "School Resumption", // Event name (required)
+        date: "September/12/2022", // Event date (required)
+        type: "holiday", // Event type (required)
+        everyYear: false // Same event every year (optional)
+      },
+      {
+        name: "Vacation Leave",
+        badge: "02/13 - 02/15", // Event badge (optional)
+        date: ["February/13/2020", "February/15/2020"], // Date range
+        description: "Vacation leave for 3 days.", // Event description (optional)
+        type: "event",
+        color: "#63d867" // Event custom color (optional)*/
+      }
+    ]
+  });
+  </script>
+</body>
+</html>

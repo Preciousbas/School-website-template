@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chesterfield International School</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+
+</head>
+<body>
+	<div class="navbar">
+		<div class="logo">
+			<img src="#"><a href="index.html"></a>
+		</div>
+		<div class="links">
+			<ul>
+			<li><a href="index.html" class="active">Home</a></li>
+    		<li><a href='#'> About Us <i class="fa fa-caret-down"></i></a>
+    		<div class="dropdown-content">
+    			<ul>
+      				<li><a href="#">Founder's Note</a></li>
+      					<li><a href="#">Codes & Policies</a></li>
+      				<li><a href="#">News</a></li>
+      				<li><a href="#">Calendar</a></li>
+      				<li><a href="#">Gallery</a></li>
+      			</ul>
+    		</div>
+    		</li>
+    		<li><a href='#'>Schools <i class="fa fa-caret-down"></i></a>
+    			
+    		<div class="dropdown-content">
+    			<ul>
+      				<li><a href="#">Nursery School</a></li>
+      				<li><a href="#">Primary School</a></li>
+      			</ul>
+      		</div>
+      		</li>
+    		<li><a href='#'>Admissions <i class="fa fa-caret-down"></i></a>
+    			
+    			<div class="dropdown-content">
+    				<ul>
+      					<li><a href="#">Application Process</a></li>
+      					<li><a href="#">Tuition</a></li>
+					</ul>
+      			</div>
+      		</li>
+    		<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+    <div class="body">
+    <img src="elephant.jpg">
+    <div class="welcome">
+      <h3>A Warm Welcome</h3>
+      <p>We are dedicated to the advancement of humanity, through quality education, dedicated service and total commitment.</p><br>
+      <p>The light is our focus, love is our sustenance. In this new age of awareness, an all around education is the answer to all challenges of life. With our light and our love, the best is our lot.</p>
+    </div>
+  </div>
+  <div class="writeup">
+    <p>A small writeup maybe like this one (Chrisland Schools is one of the largest privately-owned educational institutions in Nigeria and one of the best schools in Nigeria. Founded in 1977 by the Chairman, High Chief Dr (Mrs) Winifred Awosika (OON) with a vision to be at the forefront of private education in Nigeria and to entrench leadership qualities in children from kindergarten to tertiary level.
+
+    Today, we are known for our quality and excellence; this is why we are ranked among the best primary schools in Lagos and Abuja. Our secondary schools are rated as some of the best secondary schools in Lagos and Abuja.)</p>
+  </div>
+  <div class="schools">
+    <div class="nursery">
+      <h3>NURSERY SCHOOL</h3>
+      <p>Our nursery school is designed to equip your child with learning fundamentals. With a sufficient blend of Montessori and play, we lay a strong foundation on which your child’s education will bloom.(will be changed)</p>
+      <button><a href="#">Learn More</a></button>
+    </div>
+    <div class="primary">
+      <h3>PRIMARY SCHOOL</h3>
+      <p>The importance of primary education can not be overemphasized. This is why we have a robust curriculum for your child. We pay attention to your child’s cognitive needs, values and develop their physical abilities.(will be changed)</p>
+      <button><a href="#">Learn More</a></button>
+    </div>
+  </div>
+  <div class="reasons">
+    <h2>Why Chesterfield?</h2>
+    <p>blah blah blah blah blah</p>
+  </div>
+  
+  <div class="certs">
+    <!-- Accreditation certificates go here-->
+  </div>
+  <section class="footer">
+    <div class="contact">
+      <h3>Contact</h3>
+      <ul>
+        <li>09048898818</li><br>
+        <li>chesterfieldphuy@gmail.com</li><br>
+        <li>17 King Of Kings Street, Off Aka Etinan Road, Uyo, Akwa Ibom State</li>
+      </ul>
+    </div>
+    <div class="admit">
+      <h3>Admissions</h3>
+      Enquiries can be made from Monday to Friday between the hours of 8am to 5pm. Excluding public holidays
+    </div>
+    <div class="about">
+      <h3>About Us</h3>
+      <ul>
+        <li>Facilities</li><br>
+        <li>Vision & Mission</li><br>
+        <li>Core Values</li><br>
+        <li>Leadership</li>
+        <li>FAQs</li>
+      </ul>
+    </div>
+  </section>
+  <script type="text/javascript">
+var prev = document.getElementById("prev");
+var next = document.getElementById("next");
+var count = 1;
+var slideshows = document.querySelectorAll('#slideshow-example');
+slideshows.forEach(initSlideShow);
+
+function initSlideShow(slideshow) {
+
+  var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
+
+  var index = 0, time = 5000;
+  slides[index].classList.add('active');
+  
+  function Next(){
+  slides[index].classList.remove('active');
+  index = (index + 1) % slides.length;
+  slides[index].classList.add('active');
+}
+  function Prev(){
+  slides[index].classList.remove('active');
+  index = (index - 1 + slides.length) % slides.length;
+  slides[index].classList.add('active');
+}
+  next.onclick=function() {
+     Next();
+    };
+   prev.onclick=function() {
+     Prev();
+    };
+
+  setInterval( () => {
+    slides[index].classList.remove('active');
+    
+    index++;
+    if (index === slides.length) index = 0;
+
+    slides[index].classList.add('active');
+
+  }, time);
+}; 
+  </script>
+</body>
+</html>

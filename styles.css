@@ -1,0 +1,259 @@
+* {
+  	box-sizing: border-box;
+  	padding: 0;
+  	margin: 0;
+	}
+
+.body{
+	display: flex;
+	flex-direction: row;
+}
+
+.navbar{
+	display: block;
+	flex-direction: column;
+
+}
+
+.navbar ul{
+	list-style: none;
+	float: left;
+	overflow: hidden;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.navbar ul li{
+	float: left;
+}
+
+.logo{
+	float: left;
+	margin-left: 20px;
+}
+
+.links{
+	
+	margin-left:815px;
+	flex-direction: row;
+	display: inline-block;
+}
+
+.links a{
+	text-align: center;
+	padding: 15px 15px;
+	text-decoration: none;
+	margin-top: 20px;
+}
+
+.links li{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.active, .links ul li:hover{
+	background: black;
+	border-radius: 3px;
+}
+
+.links ul li:hover .dropdown-content{
+	display: block;
+	position: absolute;
+	margin-top: 12px;
+	margin-left: -15px;
+}
+
+.links ul li:hover .dropdown-content ul{
+	display: block;
+	margin: 8px;
+}
+
+.links ul li:hover .dropdown-content ul li{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	border-radius: 0;
+	background: transparent;
+	text-align: left;
+}
+
+.links ul li:hover .dropdown-content ul li:last-child{
+	border-bottom: none;
+}
+
+.links ul li:hover .dropdown-content ul li a:hover{
+	color: black;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.links ul li:hover .dropdown-content {
+  display: block;
+  position: absolute;
+  padding: 
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+[data-component="slideshow"] .slide {
+	display: none;
+  text-align: center;
+  width: 100%;
+  height: 600px;
+}
+
+[data-component="slideshow"] .slide.active {
+	display: block;
+	width: 100%;
+}
+
+.slide img{
+	width: 100%;
+	height: 600px;
+}
+
+#prev, #next {
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 65%;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+  cursor: pointer;
+}
+
+#prev {
+  left: 10px;
+}
+#next {
+  right: 10px;
+}
+
+#prev:hover, #next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0;
+}
+
+.body{
+	display: flex;
+	flex-direction: row;
+	margin-top: 40px;
+}
+
+.body img{
+	margin-left: 18px;
+	margin-right: 25px;
+	margin-top: 30px;
+}
+
+.welcome{
+	display: flex;
+	flex-direction: column;
+}
+
+.welcome h3{
+	padding-top: 50px;
+	margin-bottom: 25px;
+	margin-top: 50px;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.writeup p{
+	margin-right: 100px;
+	margin-left: 100px;
+	margin-top: 50px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.schools{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+.schools button{
+	margin-top: 17px;
+	padding: 12px 12px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	border-radius: 9px;
+}
+
+.nursery {
+	text-align: center;
+	margin-left: 35px;
+	margin-right: 35px;
+	margin-top: 25px;
+	margin-bottom: 30px;
+	background-color: black;
+	padding: 20px 20px;
+	color: white;
+}
+
+.primary{
+	text-align: center;
+	margin-left: 35px;
+	margin-right: 35px;
+	margin-top: 25px;
+	margin-bottom: 30px;
+	background-color: black;
+	padding: 20px 20px;
+	color: white;
+}
+
+.reasons{
+	text-align: center;
+	margin-top: 40px;
+}
+
+.reasons h2{
+	margin-top: 15px;
+	margin-bottom: 19px;
+}
+
+
+.footer{
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+	margin-top: 25px;
+	color: white;
+	padding: 30px 30px;
+}
+
+.contact{
+	margin-right: 20px;
+}
+
+.admit{
+	margin-right: 20px;
+}
+
+.footer ul{
+	list-style: none;
+}
+
